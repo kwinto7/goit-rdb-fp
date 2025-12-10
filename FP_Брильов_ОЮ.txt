@@ -62,6 +62,8 @@ FROM infectious_cases AS ic
 JOIN entity_dim AS d
   ON ic.Entity = d.entity_name
  AND ic.Code  <=> d.code;
+  
+ SELECT COUNT(*) FROM pandemic.infectious_cases;
  
  -- 3
 SELECT
